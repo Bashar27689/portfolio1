@@ -1,1 +1,68 @@
-/* You can add global styles to this file, and also import other style files */
+@use '../src/app/scss/utitities';
+@use '../src/app/scss/color' as col;
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Patrick+Hand|Yeseva+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  cursor:default;
+}
+
+
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+  
+  --color-1: #186cb8;
+  --color-2: #2a9a9f;
+  --color-3: #f98d00;
+  --color-4: #e83611;
+  --color-5: #f1b211;
+}
+
+/* general style*/
+body{
+  font-family: 'Patrick Hand', cursive;
+  background-color:col.$body-color;
+}
+
+a{
+  font-family: 'Yeseva One', cursive;
+  font-weight:bold;
+  cursor: pointer;
+}
+h1,
+h5{
+  font-family: 'Yeseva One', cursive;
+  font-weight:bold;
+}
+
+
+@media screen and (max-width: 500px) {
+  .navbar-container{
+    flex-direction: column;
+    .navbaritem {
+      margin: 0;
+    }
+
+    .btnnavbar {
+      font-weight: 100;
+    
+    }
+    
+  }
+
+  .section-img{
+    width: 10rem;
+  }
+
+
+}
+
