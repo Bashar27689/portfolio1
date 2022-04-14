@@ -30,7 +30,7 @@
 /* general style*/
 body{
   font-family: 'Patrick Hand', cursive;
-  background-color:col.$body-color;
+  background-color:#FFF;
 }
 
 a{
@@ -46,7 +46,7 @@ h5{
 
 
 @media screen and (max-width: 500px) {
-  .navbar-container{
+  .navbar-container,.navbarlist{
     flex-direction: column;
     .navbaritem {
       margin: 0;
