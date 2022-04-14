@@ -10,14 +10,14 @@ import { LinkedinComponent } from './components/linkedin/linkedin.component';
 import { NavShellComponent } from './components/nav-shell/nav-shell.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProjectsComponent } from './components/projects/projects.component';
-import { SkillesComponent } from './components/skilles/skilles.component';
+import { SkillsComponent } from './components/skilles/skills.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LinkedinComponent,
-    SkillesComponent,
+    SkillsComponent,
     NavbarComponent,
     NavShellComponent,
     ContactComponent,

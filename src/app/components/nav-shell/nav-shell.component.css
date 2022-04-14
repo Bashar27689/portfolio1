@@ -1,0 +1,39 @@
+.app-container {
+  display: -ms-grid;
+  display: grid;
+  margin: 0;
+  padding: 0;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.5rem;
+  height: 100vh;
+}
+
+.app-container .header {
+  display: -ms-grid;
+  display: grid;
+  background-color: aqua;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.app-container .main {
+  display: -ms-grid;
+  display: grid;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: yellowgreen;
+  border: 2px solid black;
+}
+
+.app-container .footer {
+  display: -ms-grid;
+  display: grid;
+  background-color: aqua;
+  border: 2px solid black;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+/*# sourceMappingURL=nav-shell.component.css.map */

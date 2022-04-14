@@ -1,1 +1,27 @@
+.app-container{
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0.5rem;
+    height: 100vh;
 
+    .header{
+        background-color: aqua;
+        height: fit-content
+    }
+
+    .main{
+        height: fit-content;
+        border: 2px solid black;
+        
+        
+    }
+
+    .footer{
+        background-color: aqua;
+        border: 2px solid black;
+        height: fit-content;
+        
+    }
+}

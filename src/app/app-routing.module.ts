@@ -5,7 +5,7 @@ import { HomeComponent } from './components/home/home.component';
 import { LinkedinComponent } from './components/linkedin/linkedin.component';
 import { NavShellComponent } from './components/nav-shell/nav-shell.component';
 import { ProjectsComponent } from './components/projects/projects.component';
-import { SkillesComponent } from './components/skilles/skilles.component';
+import { SkillsComponent } from './components/skilles/skills.component';
 
 const navbarRoutes: Routes = [
   {path:'', redirectTo:'/home-page', pathMatch:'full'},
@@ -14,7 +14,7 @@ const navbarRoutes: Routes = [
  
   {path:'linkedin-page', component:LinkedinComponent},
 
-  {path:'skilles-page', component:SkillesComponent},
+  {path:'skills-page', component:SkillsComponent},
 
   {path: 'contact-page', component:ContactComponent},
 

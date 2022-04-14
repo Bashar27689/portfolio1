@@ -1,19 +1,21 @@
 @use "../../scss/color" as col;
 
 .navbar-container {
-  background-color: col.$light-color;
+  background-color: col.$darkblue-color;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
  
   }
 
 
 .logo {
-  color: col.$dark-color;
+  color: col.$light-color;
   font-weight: 900;
   font-size: 1.8em;
+  text-decoration: none;
+  align-items: center;
 }
 
 /* ul - li style*/
@@ -30,7 +32,7 @@
 
 /* <a> btn style*/
 .btnnavbar {
-  color: col.$dark-color;
+  color: col.$light-color;
   text-decoration: none;
   font-weight: 700;
   font-size: 1.1em;

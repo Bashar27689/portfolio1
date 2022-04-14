@@ -1,57 +1,99 @@
-@use '../../scss/color' as col;
+@use "../../scss/color" as col;
 
-.section-container{
-    margin: 1.5rem ;
-    min-height: 25rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-   
+.section-container {
+  margin: 1rem auto;
+  min-height: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media only screen and (orientation: portrait) {
+      flex-direction: column-reverse;
+    
+    margin: 0.1rem;
+    .section-text {
+      & h1 {
+        font-size: 1.5rem;
+      }
+      & p {
+        font-size: 0.8em;
+      }
+      .btn {
+        font-size: 1.3em;
+      }
+      .section-icon {
+        & i {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}
 
- 
-}   
+.section-text {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid col.$orang-color;
+  padding: 1rem;
+  color: col.$light-color;
+  background-color: col.$body-color;
+  border-radius: 30px;
+  box-shadow: 2px 5px 20px col.$orang-color;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  .iconLinke{
+    margin-right: 0.5em;
+      }
 
-.section-text{
-    border: 2px solid col.$orang-color;
-    padding: 1rem;
-    color:col.$light-color;
-    border-radius:30px ;
-    box-shadow: 2px 5px 20px col.$orang-color;
-    -webkit-border-radius:30px ;
-    -moz-border-radius:30px ;
-    -ms-border-radius:30px ;
-    -o-border-radius:30px ;
-    & h1{
-     margin: 0.5rem 0;
-     font-size: 5em;
- }
- & p{
+  .h1 {
+    margin: 0.5rem 0;
+    font-size: 5em;
+  }
+  .p {
     font-size: 1.8em;
- } 
- .section-icon{
-     font-size: 1.5em;
+  }
+  .section-icon {
+    font-size: 1.5em;
 
-     & i{
-         margin-right: 0.8rem;
-         color: col.$darkblue-color;
-     }
-     & i:hover{
-         color: col.$blue-color;
-     }
- }
- .btn{
-     font-size: 1.5em;
-     
-     background-color: col.$blue-color;
-     border-radius: 30px;
-     -webkit-border-radius: 30px;
-     -moz-border-radius: 30px;
-     -ms-border-radius: 30px;
-     -o-border-radius: 30px;
-     &:hover{
-         background-color: col.$green-color;
-     }
+    & i {
+      cursor: pointer;
+      font-size: 2em;
+      color: col.$darkblue-color;
+    }
+    & i:hover {
+      color: col.$blue-color;
+      animation: animate 5s linear infinite;
+      -webkit-animation: animate 5s linear infinite;
 }
-
+  }
+  .btn {
+    font-size: 1.5em;
+    width: 30%;
+    background-color: col.$blue-color;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    &:hover {
+      background-color: col.$green-color;
+    }
+  }
 
 }
+@keyframes animate {
+  0%{
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+100%{
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}}
