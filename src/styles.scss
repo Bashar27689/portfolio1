@@ -34,8 +34,8 @@
 /* general style*/
 body{
   font-family: 'Patrick Hand', cursive;
-  background-color:#FFF;
- 
+  background-color:col.$light-color;
+  font-size: 16px;
 }
 
 a{
@@ -67,7 +67,14 @@ h5{
   .section-img{
     width: 10rem;
   }
-
-
+  .btntext{
+    font-size:1em
+  }
+.footer{
+  .nav-item{
+    font-size: 14px;
+  }
+}
+  
 }
 

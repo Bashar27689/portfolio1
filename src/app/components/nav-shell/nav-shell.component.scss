@@ -1,3 +1,5 @@
+@use '../../scss/color' as col;
+
 .app-container{
     display: grid;
     margin: 0;
@@ -7,21 +9,16 @@
     height: 100vh;
 
     .header{
-        background-color: aqua;
         height: fit-content
     }
 
     .main{
         height: fit-content;
-        border: 2px solid black;
-        
-        
     }
 
     .footer{
-        background-color: aqua;
-        border: 2px solid black;
         height: fit-content;
+        border-top: 1px solid col.$body-color;
         
     }
 }

@@ -7,8 +7,7 @@
   align-items: center;
   justify-content: center;
   @media only screen and (orientation: portrait) {
-      flex-direction: column-reverse;
-    
+    flex-direction: column-reverse;
     margin: 0.1rem;
     .section-text {
       & h1 {
@@ -32,19 +31,19 @@
 .section-text {
   display: flex;
   flex-direction: column;
-  border: 2px solid col.$orang-color;
+  border: 2px solid col.$body-color;
+  color:col.$body-color;
   padding: 1rem;
-  color: col.$light-color;
-  background-color: col.$body-color;
+  background-color: col.$light-color;
   border-radius: 30px;
-  box-shadow: 2px 5px 20px col.$orang-color;
+  box-shadow: 2px 5px 20px col.$body-color;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
-  .iconLinke{
+  .iconLinke {
     margin-right: 0.5em;
-      }
+  }
 
   .h1 {
     margin: 0.5rem 0;
@@ -62,38 +61,44 @@
       color: col.$darkblue-color;
     }
     & i:hover {
-      color: col.$blue-color;
+      color: col.$orang-color;
       animation: animate 5s linear infinite;
       -webkit-animation: animate 5s linear infinite;
-}
+    }
   }
-  .btn {
-    font-size: 1.5em;
+  .btntext {
+    font-size: 1.5em ;
+    text-decoration: none;
+    text-align: center;
     width: 30%;
-    background-color: col.$blue-color;
+    background-color: col.$light-color;
+    border: 2px solid col.$body-color;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
     &:hover {
-      background-color: col.$green-color;
+      background-color: col.$orang-color;
+      color:col.$light-color;
+      border-color: col.$light-color;
     }
   }
-
 }
+
 @keyframes animate {
-  0%{
+  0% {
     transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
 }
-100%{
-  transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-}}
