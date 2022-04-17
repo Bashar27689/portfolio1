@@ -10,6 +10,9 @@ import { NavShellComponent } from './components/nav-shell/nav-shell.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { SkillsComponent } from './components/skilles/skills.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,13 @@ import { SkillsComponent } from './components/skilles/skills.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
+    FormsModule,
+    ReactiveFormsModule
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
